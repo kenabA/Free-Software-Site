@@ -1,0 +1,34 @@
+@use "../custom" as *;
+
+// BUTTON PRIMARY
+.btn-1 {
+  color: $primary;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  background-color: $secondary;
+  padding-block: 16px;
+  padding-inline: 32px;
+  border-radius: 30px;
+  transition: all 0.2s ease !important;
+}
+.btn-1:hover {
+  color: $secondary;
+  background-color: map-get($theme-colors, "primary-lighter");
+}
+@include media-breakpoint-down(md) {
+  .btn-1 {
+    font-size: 18px;
+    padding-block: 14px;
+    padding-inline: 28px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .btn-1 {
+    font-size: 18px;
+    padding-block: 14px;
+    padding-inline: 28px;
+  }
+}
