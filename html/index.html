@@ -13,11 +13,125 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header></header>
+    <header>
+      <nav
+        class="navbar sticky-top navbar-expand-lg navbar-light py-24 bg-secondary"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#section-hero">
+            <img src="../images/logo.png" alt="" class="hero-logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav gap-3 nav-items">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="#section-about">Softwares</a>
+              <a class="nav-link" href="#section-skills">FAQs</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- MAIN -->
-    <main></main>
+    <main>
+      <section class="section" id="section-hero">
+        <div class="container">
+          <div class="row gy-56">
+            <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <h1 class="text-alpha text-black mb-48">
+                Unlock
+                <span class="text-primary"> Academic Excellence </span>
+                with Essential Software Tools
+              </h1>
+              <p class="text-black-secondary para mb-64">
+                Explore our curated collection of essential software tools
+                tailored for university students, empowering you to excel
+                academically. Download and unlock your potential today. Ready to
+                get started? Browse our software library now.
+              </p>
+              <div class="d-flex gap-18 justify-content-between mb-64">
+                <button class="btn-1">View Softwares</button>
+                <button class="btn-2">Official Site</button>
+              </div>
+              <div>
+                <p class="fw-medium text-uppercase text-gray-600 mb-32">
+                  Softwares Available For
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-start gap-32 os-logos"
+                >
+                  <img src="../images/windows.png" alt="" class="os-logo" />
+                  <img src="../images/apple.png" alt="" class="os-logo" />
+                  <img src="../images/linux.png" alt="" class="os-logo" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <div
+                class="d-flex justify-content-center align-items-center h-100"
+              >
+                <div class="img-box">
+                  <img src="../images/hero-img.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- FOOTER -->
-    <footer></footer>
+    <footer>
+      <section class="bg-secondary py-56" id="section-footer">
+        <div class="container">
+          <div class="d-flex footer-container">
+            <div class="d-flex flex-column gap-32 pe-32 footer-section-1">
+              <img src="../images/logo.png" class="hero-logo" alt="" />
+              <p class="text-gray-500 font-10">
+                © 2023 Herald College Kathmandu, All Rights Reserved
+              </p>
+            </div>
+            <div
+              class="ps-32 text-white footer-section-2 d-flex align-items-center"
+            >
+              <ul class="d-flex flex-column gap-32 font-14">
+                <li
+                  class="f-list d-flex border-primary align-items-center gap-18 text-gray-300"
+                >
+                  <i class="fa-solid fa-location-dot font-18"></i>
+                  <p class="m-0">
+                    Herald College Kathmandu, WLV Block, IT Department
+                  </p>
+                </li>
+                <li
+                  class="f-list d-flex border-primary align-items-center gap-18 text-gray-300"
+                >
+                  <i class="fa-solid fa-envelope font-18"></i>
+                  <p class="m-0">it.noc@heraldcollege.edu.np</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <img
+          src="../images/herald-white-logo.png"
+          class="herald-white"
+          alt=""
+        />
+      </section>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

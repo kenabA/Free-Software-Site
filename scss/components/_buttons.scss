@@ -2,33 +2,41 @@
 
 // BUTTON PRIMARY
 .btn-1 {
-  color: $primary;
-  font-size: 20px;
-  text-transform: uppercase;
+  color: $white;
+  font-size: 18px;
   font-weight: 500;
   border: none;
-  background-color: $secondary;
-  padding-block: 16px;
-  padding-inline: 32px;
-  border-radius: 30px;
+  flex-grow: 1;
+  background-color: $primary;
+  padding-block: 12px;
+  padding-inline: 24px;
+  border-radius: 4px;
   transition: all 0.2s ease !important;
 }
 .btn-1:hover {
-  color: $secondary;
-  background-color: map-get($theme-colors, "primary-lighter");
+  color: $white;
+  background-color: map-get($theme-colors, "primary-hover");
 }
+// BUTTON SECONDARY
+.btn-2 {
+  color: $primary;
+  font-size: 18px;
+  flex-grow: 1;
+  font-weight: 500;
+  background-color: unset;
+  border: 2px solid $primary;
+  padding-block: 12px;
+  padding-inline: 24px;
+  border-radius: 4px;
+  transition: all 0.2s ease !important;
+}
+.btn-2:hover {
+  color: map-get($theme-colors, "primary-hover");
+  border-color: map-get($theme-colors, "primary-hover");
+}
+
 @include media-breakpoint-down(md) {
-  .btn-1 {
-    font-size: 18px;
-    padding-block: 14px;
-    padding-inline: 28px;
-  }
 }
 
 @include media-breakpoint-down(sm) {
-  .btn-1 {
-    font-size: 18px;
-    padding-block: 14px;
-    padding-inline: 28px;
-  }
 }

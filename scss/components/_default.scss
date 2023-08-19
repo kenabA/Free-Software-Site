@@ -10,11 +10,27 @@
   padding-block: 96px !important;
 }
 
+.para {
+  line-height: 1.8;
+  font-size: 18px;
+}
+
 .img-box {
-  width: 50%;
+  width: 400px;
   height: auto;
   img {
     width: 100%;
     height: auto;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .img-box {
+    width: 300px;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }

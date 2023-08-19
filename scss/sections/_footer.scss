@@ -1,1 +1,48 @@
 @use "../custom" as *;
+
+#section-footer {
+  position: relative;
+  .herald-white {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 250px;
+    opacity: 5%;
+  }
+
+  .hero-logo {
+    width: 200px;
+    height: auto;
+  }
+  .f-list {
+    list-style: none;
+  }
+  .footer-section-1 {
+    border-right: 2px solid $white;
+  }
+  ul {
+    padding: 0px !important;
+  }
+  @include media-breakpoint-down(sm) {
+    .footer-container {
+      gap: 50px;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+
+    .footer-section-1 {
+      padding-top: 32 !important;
+      border-right: 0px solid $white;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-section-2 {
+      padding: 0px !important;
+      border-bottom: 2px solid $white;
+      padding-bottom: 32px !important;
+      border-right: 0px solid $white;
+    }
+  }
+}
