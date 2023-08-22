@@ -20856,7 +20856,8 @@ textarea.form-control-lg {
   transition: all 0.2s ease !important;
 }
 
-.btn-1:hover {
+.btn-1:hover,
+.btn-1-link:hover {
   color: #f7f7f7;
   background-color: #6fb842;
 }
@@ -20874,9 +20875,42 @@ textarea.form-control-lg {
   transition: all 0.2s ease !important;
 }
 
-.btn-2:hover {
+.btn-2:hover,
+.btn-link-2:hover {
   color: #6fb842;
   border-color: #6fb842;
+}
+
+.btn-1-link {
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #f7f7f7;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  flex-grow: 1;
+  background-color: #73bf44;
+  padding-block: 12px;
+  padding-inline: 24px;
+  border-radius: 4px;
+  transition: all 0.2s ease !important;
+}
+
+.btn-2-link {
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #73bf44;
+  font-size: 18px;
+  flex-grow: 1;
+  font-weight: 500;
+  background-color: unset;
+  border: 2px solid #73bf44;
+  padding-block: 12px;
+  padding-inline: 24px;
+  border-radius: 4px;
+  transition: all 0.2s ease !important;
 }
 
 .tabs .nav-container {
