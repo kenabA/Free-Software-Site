@@ -21317,6 +21317,7 @@ textarea.form-control-lg {
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .section {
@@ -21520,6 +21521,10 @@ nav .nav-link:hover {
   --bs-navbar-toggler-focus-width: 0 !important;
 }
 
+#section-softwares .scroll {
+  height: 100vh;
+  overflow: scroll;
+}
 #section-softwares .software-desc {
   line-height: 1.6;
   font-size: 16px;
