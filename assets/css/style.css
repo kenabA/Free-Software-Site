@@ -21524,7 +21524,17 @@ nav .nav-link:hover {
   line-height: 1.6;
   font-size: 16px;
   color: #495057;
-  margin-bottom: 12px;
+  margin-bottom: 12px !important;
+}
+#section-softwares .get-software {
+  font-weight: 500;
+  color: #73bf44 !important;
+  text-decoration: none;
+  border-bottom: 1px solid #73bf44;
+  transition: all 0.2s;
+}
+#section-softwares .get-software:hover {
+  color: #6fb842 !important;
 }
 
 #section-hero h1 {

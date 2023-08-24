@@ -5,6 +5,16 @@
     line-height: 1.6;
     font-size: 16px;
     color: $black-secondary;
-    margin-bottom: 12px;
+    margin-bottom: 12px !important;
+  }
+  .get-software {
+    font-weight: 500;
+    color: $primary !important;
+    text-decoration: none;
+    border-bottom: 1px solid $primary;
+    transition: all 0.2s;
+  }
+  .get-software:hover {
+    color: $primary-hover !important;
   }
 }
