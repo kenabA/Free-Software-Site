@@ -1,1 +1,13 @@
 @use "../custom" as *;
+
+.software-card {
+  border-top: 1px solid $gray-400;
+  padding-block: 24px;
+  img {
+    width: 100px;
+    height: auto;
+  }
+  p {
+    margin-bottom: 8px !important;
+  }
+}

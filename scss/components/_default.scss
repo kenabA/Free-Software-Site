@@ -40,3 +40,27 @@
   outline: 0;
   box-shadow: none !important;
 }
+
+.os-tags {
+  padding-left: 0;
+  display: flex;
+  gap: 8px;
+  .os-tag:first-child {
+    color: white;
+    font-weight: 500;
+    border-radius: 12px;
+    padding: 4px 12px;
+    background-color: $windows;
+    font-size: 10px;
+    list-style: none;
+  }
+  .os-tag:last-child {
+    color: white;
+    font-weight: 500;
+    border-radius: 12px;
+    padding: 4px 12px;
+    background-color: $mac;
+    font-size: 10px;
+    list-style: none;
+  }
+}
