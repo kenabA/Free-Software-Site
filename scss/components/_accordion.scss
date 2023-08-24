@@ -1,0 +1,24 @@
+@use "../custom" as *;
+
+.accordion {
+  .accordion-collapse {
+    background-color: $gray-200;
+  }
+  .accordion-button {
+    background-color: $gray-200;
+    box-shadow: none;
+  }
+  button:hover {
+    color: $primary-200;
+    background-color: $primary-100;
+  }
+  a {
+    text-decoration: none;
+  }
+  .accordion-body:hover {
+    a {
+      color: $primary-200 !important;
+    }
+    background-color: $primary-100;
+  }
+}

@@ -42,6 +42,8 @@ $black-secondary: #495057;
 // CUSTOM THEME COLOR
 $primary-tint: #d7f9c2;
 $primary-shade: #173206;
+$primary-100: #e3f2da;
+$primary-200: #2e4c1b;
 $primary-hover: #6fb842;
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
@@ -62,6 +64,8 @@ $custom-theme-colors: (
   "primary-hover": $primary-hover,
   "primary-shade": $primary-shade,
   "primary-tint": $primary-tint,
+  "primary-100": $primary-100,
+  "primary-200": $primary-200,
   "black-secondary": $black-secondary,
 );
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
