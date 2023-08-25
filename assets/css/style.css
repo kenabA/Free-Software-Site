@@ -21357,7 +21357,7 @@ textarea.form-control-lg {
 .os-tags {
   padding-left: 0;
   display: flex;
-  gap: 8px;
+  gap: 2px;
 }
 .os-tags .os-tag:first-child {
   color: white;
