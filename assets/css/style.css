@@ -21489,6 +21489,10 @@ textarea.form-control-lg {
   text-decoration: none;
 }
 
+.acc-2 .accordion-body p {
+  line-height: 1.8;
+}
+
 nav .hero-logo {
   width: 200px;
   height: auto;
