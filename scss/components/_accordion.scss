@@ -1,24 +1,33 @@
 @use "../custom" as *;
-
-.accordion {
-  .accordion-collapse {
-    background-color: $gray-200;
-  }
-  .accordion-button {
-    background-color: $gray-200;
-    box-shadow: none;
-  }
-  button:hover {
-    color: $primary-200;
-    background-color: $primary-100;
-  }
-  a {
-    text-decoration: none;
-  }
-  .accordion-body:hover {
-    a {
-      color: $primary-200 !important;
+.acc-1 {
+  .accordion {
+    .accordion-button:focus {
+      z-index: 3;
+      outline: 0;
+      box-shadow: none !important;
     }
-    background-color: $primary-100;
+
+    .accordion-button:not(.collapsed) {
+      transition: all 0.2s ease-in-out;
+      background-color: $primary-100 !important;
+      color: $primary-hover;
+      border-left: 4px solid $primary;
+    }
+
+    .accordion-collapse {
+      background-color: $gray-200;
+    }
+    .accordion-button {
+      color: $gray-700;
+      background-color: $gray-200;
+      box-shadow: none;
+    }
+    button:hover {
+      color: $primary-hover;
+      background-color: $primary-100;
+    }
+    a {
+      text-decoration: none;
+    }
   }
 }

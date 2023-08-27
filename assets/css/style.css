@@ -21348,12 +21348,6 @@ textarea.form-control-lg {
     height: auto;
   }
 }
-.accordion-button:focus {
-  z-index: 3;
-  outline: 0;
-  box-shadow: none !important;
-}
-
 .os-tags {
   padding-left: 0;
   display: flex;
@@ -21380,14 +21374,11 @@ textarea.form-control-lg {
 
 .software-card {
   border-top: 1px solid #ced4da;
-  padding-block: 24px;
+  padding-block: 32px;
 }
 .software-card img {
   width: 100px;
   height: auto;
-}
-.software-card p {
-  margin-bottom: 8px !important;
 }
 
 * {
@@ -21471,25 +21462,31 @@ textarea.form-control-lg {
   font-weight: 600;
 }
 
-.accordion .accordion-collapse {
+.acc-1 .accordion .accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: none !important;
+}
+.acc-1 .accordion .accordion-button:not(.collapsed) {
+  transition: all 0.2s ease-in-out;
+  background-color: #e3f2da !important;
+  color: #6fb842;
+  border-left: 4px solid #73bf44;
+}
+.acc-1 .accordion .accordion-collapse {
   background-color: #e9ecef;
 }
-.accordion .accordion-button {
+.acc-1 .accordion .accordion-button {
+  color: #495057;
   background-color: #e9ecef;
   box-shadow: none;
 }
-.accordion button:hover {
-  color: #2e4c1b;
+.acc-1 .accordion button:hover {
+  color: #6fb842;
   background-color: #e3f2da;
 }
-.accordion a {
+.acc-1 .accordion a {
   text-decoration: none;
-}
-.accordion .accordion-body:hover {
-  background-color: #e3f2da;
-}
-.accordion .accordion-body:hover a {
-  color: #2e4c1b !important;
 }
 
 nav .hero-logo {
@@ -21529,7 +21526,7 @@ nav .nav-link:hover {
   line-height: 1.6;
   font-size: 16px;
   color: #495057;
-  margin-bottom: 12px !important;
+  margin-bottom: 12px;
 }
 #section-softwares .get-software {
   font-weight: 500;
@@ -21540,6 +21537,18 @@ nav .nav-link:hover {
 }
 #section-softwares .get-software:hover {
   color: #6fb842 !important;
+}
+
+.link-active .active {
+  color: #73bf44 !important;
+}
+
+.link-active:hover {
+  transition: all 0.2s ease;
+  background-color: #e9ecef !important;
+}
+.link-active:hover .active {
+  color: #73bf44 !important;
 }
 
 #section-hero h1 {

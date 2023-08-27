@@ -9,7 +9,7 @@
     line-height: 1.6;
     font-size: 16px;
     color: $black-secondary;
-    margin-bottom: 12px !important;
+    margin-bottom: 12px;
   }
   .get-software {
     font-weight: 500;
@@ -20,5 +20,18 @@
   }
   .get-software:hover {
     color: $primary-hover !important;
+  }
+}
+
+.link-active {
+  .active {
+    color: $primary !important;
+  }
+}
+.link-active:hover {
+  transition: all 0.2s ease;
+  background-color: $gray-200 !important;
+  .active {
+    color: $primary !important;
   }
 }
