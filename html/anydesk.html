@@ -10,6 +10,11 @@
     />
     <link rel="stylesheet" href="../assets/css/fontawesome.css" />
     <title>IT Department</title>
+    <style>
+      .hide-list {
+        list-style: none;
+      }
+    </style>
   </head>
   <body>
     <!-- HEADER -->
@@ -90,8 +95,8 @@
                           >Foxit</a
                         >
                       </div>
-                      <div class="accordion-body">
-                        <a href="anydesk.html" class="text-black font-14"
+                      <div class="accordion-body link-active">
+                        <a href="anydesk.html" class="text-black font-14 active"
                           >AnyDesk</a
                         >
                       </div>
@@ -109,10 +114,32 @@
           <div class="col-10 scroll">
             <div class="section px-24">
               <h3 class="text-gamma text-black mb-40">
-                IT Department -
-                <span class="text-primary"> FAQs</span>
+                Download
+                <span class="text-primary"> AnyDesk</span>
               </h3>
-              <div class="software-card p-0 border-0">
+              <div class="software-card">
+                <div
+                  class="gap-18 d-flex align-items-center justify-content-start mb-24"
+                >
+                  <img src="../images/logo-anydesk.png" alt="" />
+                  <div>
+                    <h4 class="fw-bolder">AnyDesk</h4>
+                    <p class="fw-medium font-12 text-gray-600">AVAILABLITY</p>
+                    <ul class="os-tags mb-0">
+                      <li class="os-tag">Windows</li>
+                      <li class="os-tag">macOS</li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="software-desc mb-18">
+                  AnyDesk is a versatile and efficient remote desktop software
+                  developed to simplify remote access and collaboration. With
+                  its intuitive interface and robust features, AnyDesk enables
+                  seamless connectivity between devices, allowing users to
+                  access their computers from anywhere. Its low latency and
+                  high-quality video and audio transmission make remote support
+                  and real-time collaboration a breeze.
+                </p>
                 <div class="acc-2">
                   <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
@@ -125,7 +152,7 @@
                           aria-expanded="true"
                           aria-controls="collapseOne"
                         >
-                          How do I access the form?
+                          Steps to download
                         </button>
                       </h2>
                       <div
@@ -134,98 +161,87 @@
                         data-bs-parent="#accordionExample"
                       >
                         <div class="accordion-body">
-                          <p class="font-16 text-gray-700">
-                            To access the form, locate the QR Code available on
-                            the notice board. Take your device with a scanning
-                            app installed and scan the QR Code using the app's
-                            camera. This will redirect you to the form. Fill in
-                            the required information in the form accurately and
-                            submit it. Keep an eye on your personal account, as
-                            you'll soon receive a reset link. Follow the
-                            instructions in the email to proceed with the reset
-                            process. Remember, the QR Code is conveniently
-                            placed on the notice board for easy access to the
-                            form.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button text-gray-700 collapsed font-18 fw-bold py-24"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="collapseTwo"
-                        >
-                          My identity card is lost / faded / damaged ?
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseTwo"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body">
-                          <p class="font-16 text-gray-700">
-                            If an individual has misplaced their identity card,
-                            it is advisable to complete the requisite form
-                            provided. To access the form, locate the QR Code
-                            available on the notice board. Take your device with
-                            a scanning app installed and scan the QR Code using
-                            the app's camera. This will redirect you to the
-                            form. Fill in the required information in the form
-                            accurately and submit it. Keep an eye on your
-                            personal account, as you'll soon receive a reset
-                            link. Follow the instructions in the email to
-                            proceed with the reset process. Remember, the QR
-                            Code is conveniently placed on the notice board for
-                            easy access to the form.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button text-gray-700 collapsed font-18 fw-bold py-24"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseThree"
-                          aria-expanded="false"
-                          aria-controls="collapseThree"
-                        >
-                          What can we borrow from the IT department?
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseThree"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body">
-                          <p class="font-16 text-gray-700">
-                            Please kindly note that you are required to
-                            <span class="fw-medium"
-                              >present your identity card</span
+                          <div class="d-flex align-items-start">
+                            <div
+                              class="nav flex-column nav-pills me-3"
+                              id="v-pills-tab"
+                              role="tablist"
+                              aria-orientation="vertical"
                             >
-                            in exchange for the items you have borrowed. Your
-                            identity card will be returned to you upon the
-                            <span class="fw-medium">successful return</span> of
-                            the borrowed items. <br />
-                            Similarly, here is a list of items available for
-                            borrowing from the IT Department:
-                          </p>
-
-                          <ol class="font-16 text-gray-700">
-                            <li class="">Type C to HDMI</li>
-                            <li class="">Mouse and Mouse Pad</li>
-                            <li class="">Keyboard</li>
-                            <li class="">Webcam</li>
-                            <li class="">Clicker</li>
-                          </ol>
+                              <button
+                                class="nav-link active"
+                                id="v-pills-home-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#v-pills-home"
+                                type="button"
+                                role="tab"
+                                aria-controls="v-pills-home"
+                                aria-selected="true"
+                              >
+                                Windows
+                              </button>
+                              <button
+                                class="nav-link"
+                                id="v-pills-profile-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#v-pills-profile"
+                                type="button"
+                                role="tab"
+                                aria-controls="v-pills-profile"
+                                aria-selected="false"
+                              >
+                                macOS
+                              </button>
+                            </div>
+                            <div class="tab-content" id="v-pills-tabContent">
+                              <div
+                                class="tab-pane fade show active"
+                                id="v-pills-home"
+                                role="tabpanel"
+                                aria-labelledby="v-pills-home-tab"
+                              >
+                                <ol>
+                                  <li>
+                                    Go to the website:
+                                    <a
+                                      href="https://anydesk.com/en"
+                                      class="drive-link"
+                                      target="_blank"
+                                      >https://anydesk.com/en</a
+                                    >
+                                  </li>
+                                  <li>Click on the 'Download Now' button</li>
+                                  <li>
+                                    This will install the application that you
+                                    can open directly.
+                                  </li>
+                                </ol>
+                              </div>
+                              <div
+                                class="tab-pane fade"
+                                id="v-pills-profile"
+                                role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab"
+                              >
+                                <ol>
+                                  <li>
+                                    Go to the website:
+                                    <a
+                                      href="https://anydesk.com/en"
+                                      class="drive-link"
+                                      target="_blank"
+                                      >https://anydesk.com/en</a
+                                    >
+                                  </li>
+                                  <li>Click on the 'Download Now' button</li>
+                                  <li>
+                                    This will install the application that you
+                                    can open directly.
+                                  </li>
+                                </ol>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -235,6 +251,17 @@
             </div>
           </div>
         </div>
+        <section id="interstitial">
+          <div
+            class="px-24 h-100 d-flex align-items-center justify-content-center flex-column"
+          >
+            <p class="fw-bold text-primary font-24">Wrong Device!</p>
+            <p>
+              This website is optimized for larger screens. Please use a laptop
+              or PC for the best experience.
+            </p>
+          </div>
+        </section>
       </section>
     </main>
     <!-- FOOTER -->
@@ -275,17 +302,6 @@
           class="herald-white"
           alt=""
         />
-        <section id="interstitial">
-          <div
-            class="px-24 h-100 d-flex align-items-center justify-content-center flex-column"
-          >
-            <p class="fw-bold text-primary font-24">Wrong Device!</p>
-            <p>
-              This website is optimized for larger screens. Please use a laptop
-              or PC for the best experience.
-            </p>
-          </div>
-        </section>
       </section>
     </footer>
 
