@@ -90,3 +90,20 @@ ol {
     overflow-y: hidden;
   }
 }
+
+.list-none {
+  list-style: none;
+}
+
+.td-none {
+  text-decoration: none;
+}
+.video-link-list {
+  display: inline-block !important;
+}
+.video-link {
+  transition: all 0.4s ease;
+}
+.video-link:hover {
+  color: $primary-hover-2 !important;
+}
